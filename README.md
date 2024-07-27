@@ -1,19 +1,64 @@
-# CIFAR-10 Image Classification with PyTorch
+# CIFAR-10 Model
 
-This project demonstrates how to perform image classification on the CIFAR-10 dataset using PyTorch. It includes the implementation of a Convolutional Neural Network (CNN) model trained on the CIFAR-10 dataset to classify images into 10 different classes. There were two approaches taken to make the convolutional neural network as well. The first model made (not attached), had a 20% accuracy as it had no convolutional layers. The second model made was able to predict with a 61% accuracy, and third model made was able to predict with a 63% accuracy. 
+This repository contains the implementation of a Convolutional Neural Network (CNN) to classify images in the CIFAR-10 dataset. The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 different classes, with 6,000 images per class.
 
-A Tesla T4 Nvidia GPU was used on Google Colab for this project. 
-## Getting Started
+## Table of Contents
 
-### Prerequisites
+- [Project Description](#project-description)
+- [Dataset](#dataset)
+- [Model Architecture](#model-architecture)
+- [Results](#results)
+- [Modules](#modules)
+- [Usage](#usage)
+  
+## Project Description
 
-- Python (>=3.6)
-- PyTorch
-- torchvision
-- matplotlib
+The goal of this project is to develop a neural network model to classify images from the CIFAR-10 dataset. This implementation includes data preprocessing, model training, and evaluation.
 
-You can install the required dependencies using pip:
+## Dataset
+
+The CIFAR-10 dataset is a well-known dataset in the field of machine learning. It contains 60,000 images categorized into 10 different classes:
+
+1. Airplane
+2. Automobile
+3. Bird
+4. Cat
+5. Deer
+6. Dog
+7. Frog
+8. Horse
+9. Ship
+10. Truck
+
+The dataset is split into 50,000 training images and 10,000 test images.
+
+## Model Architecture
+
+The model used in this project is a Convolutional Neural Network (CNN) with the following layers:
+
+- Convolutional layers
+- Pooling layers
+- Fully connected layers
+- Dropout layers
+
+## Results
+
+The model achieves an accuracy of approximately XX% on the test set. (Replace XX with your model's accuracy.)
+
+## Modules
+
+To run the code, you need the following modules:
 
 ```bash
-pip install torch torchvision matplotlib
+# Install the required modules using pip
+pip install numpy
+pip install matplotlib
+pip install torch
+pip install torchvision
+```
+## Usage
+Clone the respository and navigate to the project directory: 
+```bash 
+git clone https://github.com/RishiShah99/Cifar-10.git
+cd Cifar-10
 ```
